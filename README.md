@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Here’s a simple but clear `README.md` you can use for your **Next.js** project (`JUMPSTART-SUPPORT-ASSISTANT`) that explains how to install and run the project:
 
-## Getting Started
+---
 
-First, run the development server:
+````markdown
+# Jumpstart Support Assistant
+
+A Next.js TypeScript-based web assistant for customer support at Jumpstart Fashion Retail.
+
+## 📦 Prerequisites
+
+- Node.js (v18 or later recommended)
+- npm (comes with Node.js)
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/jumpstart-support-assistant.git
+cd jumpstart-support-assistant
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+### 5. Start production server
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+.
+├── app/                 # Main app components
+│   ├── layout.tsx       # Root layout
+│   ├── page.tsx         # Entry page
+│   └── globals.css      # Global styles
+├── public/              # Static files
+├── .next/               # Build output (auto-generated)
+├── node_modules/        # Dependencies (auto-generated)
+├── next.config.ts       # Next.js config
+├── package.json         # Project config and scripts
+├── tsconfig.json        # TypeScript settings
+└── README.md            # You're reading it!
+```
 
-## Deploy on Vercel
+## 🛠️ Available Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* `npm run dev` – Start dev server
+* `npm run build` – Build for production
+* `npm run start` – Start production server
+* `npm run lint` – Run ESLint (if configured)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔒 Environment Variables
+
+If you are using environment variables, create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_API_URL=https://api.example.com
+```
+
+> ⚠️ Do not commit `.env*` files to GitHub. Add them to `.gitignore`.
+
+## 📄 License
+
+MIT – Feel free to use or modify.
+
+```
+
+---
+
+Let me know if you want to add deployment instructions (e.g., Vercel, Docker, etc.).
+```
